@@ -10,8 +10,10 @@ function frameIt(){
   })
 }
 function pressIt(){
-  $('text').on('keydown', function(){
-
+  $(document).on('keydown', function(){
+    if(key.which == 82){
+      alert('r was pressed')
+    }
   })
 }
 $(document).ready(function(){
